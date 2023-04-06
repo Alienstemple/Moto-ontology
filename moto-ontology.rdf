@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Has_charact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Has_charact">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Related"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Characteristic"/>
+        <rdfs:label>обладаетХарактеристикой</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Related -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Related">
+        <rdfs:label>связан</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#consistOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#consistOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Related"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#являетсяЧастью"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail"/>
+        <rdfs:label>состоитИз</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#isSubclass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#isSubclass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Related"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Classic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Cruiser"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Sportbike"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Touring"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:label>являетсяПодклассом</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#являетсяЧастью -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#являетсяЧастью">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Related"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Characteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Characteristic">
+        <rdfs:label>Характеристика</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Classic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Classic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:label>Классика</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Cruiser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Cruiser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:label>Круизер</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail">
+        <rdfs:label>Деталь</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail"/>
+        <rdfs:label>Мотор</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine_capacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine_capacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Characteristic"/>
+        <rdfs:label>Объем бензобака</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle">
+        <rdfs:label>Мотоцикл</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Characteristic"/>
+        <rdfs:label>Мощность</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Speed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Speed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Characteristic"/>
+        <rdfs:label>Максимальная скорость</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Sportbike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Sportbike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:label>Спортивный</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Touring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Touring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Motorcycle"/>
+        <rdfs:label>Туринг</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail"/>
+        <rdfs:label>Подвеска</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Wheels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Wheels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Detail"/>
+        <rdfs:label>Колеса</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#BMW_HP4_RACE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#BMW_HP4_RACE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Sportbike"/>
+        <untitled-ontology-3:consistOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#HEMEN_188F"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#HEMEN_188F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#HEMEN_188F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Harley-Davidson_FXDR_114 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Harley-Davidson_FXDR_114">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Classic"/>
+        <untitled-ontology-3:consistOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#RIZEE_DB11-AE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#KTM_RC_390_ABS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#KTM_RC_390_ABS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Sportbike"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Kawasaki_Vulcan_S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Kawasaki_Vulcan_S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Cruiser"/>
+        <untitled-ontology-3:consistOf rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#LIFAN_2V78F-2A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#LIFAN_2V78F-2A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#LIFAN_2V78F-2A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#RIZEE_DB11-AE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#RIZEE_DB11-AE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Engine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Suzuki_GSX-R1000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Suzuki_GSX-R1000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Touring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Triumph_Speedmaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Triumph_Speedmaster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Touring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Yamaha_YZF-R3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Yamaha_YZF-R3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/krautkraft/ontologies/2023/3/untitled-ontology-3#Sportbike"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
